@@ -1,4 +1,4 @@
 eclipse.preferences.version=1
-newSoftwareExampleWizardPage.defaultLocation=F\:\\AAATheCodex\\CE\\Sem6\\CO503\\Practicals\\Practical2\\ProjectFiles\\FinalFinal\\software\\custom
-newSoftwareExampleWizardPage.sopcinfoFile=F\:\\AAATheCodex\\CE\\Sem6\\CO503\\Practicals\\Practical2\\ProjectFiles\\FinalFinal\\CRC_SoC.sopcinfo
-newSoftwareExampleWizardPage2.newBspLocation=F\:\\AAATheCodex\\CE\\Sem6\\CO503\\Practicals\\Practical2\\ProjectFiles\\FinalFinal\\software\\custom_bsp
+newSoftwareExampleWizardPage.defaultLocation=C\:\\Users\\kaush\\Documents\\Coding_Practice\\FPGA\\CO503-practicals\\Practical2\\ProjectFiles\\FinalFinal\\software\\custom_crc
+newSoftwareExampleWizardPage.sopcinfoFile=C\:\\Users\\kaush\\Documents\\Coding_Practice\\FPGA\\CO503-practicals\\Practical2\\ProjectFiles\\FinalFinal\\CRC_SoC.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=C\:\\Users\\kaush\\Documents\\Coding_Practice\\FPGA\\CO503-practicals\\Practical2\\ProjectFiles\\FinalFinal\\software\\custom_crc_bsp

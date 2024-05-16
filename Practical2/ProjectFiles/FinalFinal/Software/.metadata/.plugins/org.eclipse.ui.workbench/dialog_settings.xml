@@ -4,7 +4,7 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
-			<item value="F:\AAATheCodex\CE\Sem6\CO503\Practicals\Practical2\Resources\CRC_Source_Code"/>
+			<item value="C:\Users\kaush\Documents\Coding_Practice\FPGA\CO503-practicals\Practical2\ProjectFiles\FinalFinal\CRC_Source_Code"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">

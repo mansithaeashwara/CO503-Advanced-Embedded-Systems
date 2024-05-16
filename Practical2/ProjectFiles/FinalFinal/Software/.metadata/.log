@@ -1,4 +1,4 @@
-!SESSION 2024-04-19 23:29:38.948 -----------------------------------------------
+!SESSION 2024-05-02 16:44:06.231 -----------------------------------------------
 eclipse.buildId=M20120208-0800
 java.version=1.6.0_23
 java.vendor=Sun Microsystems Inc.
@@ -6,90 +6,51 @@ BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
 Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
 Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
 
-!ENTRY org.eclipse.cdt.core 1 0 2024-04-19 23:30:48.526
-!MESSAGE Indexed 'custom_bsp' (82 sources, 106 headers) in 2.05 sec: 2,333 declarations; 4,115 references; 31 unresolved inclusions; 495 syntax errors; 277 unresolved names (4.12%)
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-02 16:45:09.848
+!MESSAGE Indexed 'custom_crc_bsp' (82 sources, 108 headers) in 1.46 sec: 2,459 declarations; 4,192 references; 77 unresolved inclusions; 176 syntax errors; 184 unresolved names (2.69%)
 
-!ENTRY org.eclipse.cdt.core 1 0 2024-04-19 23:30:48.543
-!MESSAGE Indexed 'custom' (0 sources, 13 headers) in 0.01 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-02 16:45:11.260
+!MESSAGE Indexed 'custom_crc' (0 sources, 13 headers) in 0.01 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
 
-!ENTRY com.altera.sbtgui.launch 1 0 2024-04-19 23:33:30.373
-!MESSAGE Executing: [F:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x81020]
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-02 17:07:06.016
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x81020]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2024-04-19 23:33:32.269
-!MESSAGE Executing: [F:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x81020 /cygdrive/f/AAATheCodex/CE/Sem6/CO503/Practicals/Practical2/ProjectFiles/FinalFinal/Software/custom/custom.elf]
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-02 17:07:08.270
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x81020 /cygdrive/c/Users/kaush/Documents/Coding_Practice/FPGA/CO503-practicals/Practical2/ProjectFiles/FinalFinal/Software/custom_crc/custom_crc.elf]
 
-!ENTRY org.eclipse.osgi 4 0 2024-04-19 23:33:53.919
-!MESSAGE Unexpected exception occurred loading manifest for bundle at the location: reference:file:plugins/org.eclipse.cdt.managedbuilder.ui_8.0.2.201202111925.jar.
-!STACK 0
-org.osgi.framework.BundleException: An error occurred while reading the manifest file.
-	at org.eclipse.osgi.framework.util.Headers.parseManifest(Headers.java:259)
-	at org.eclipse.osgi.internal.baseadaptor.AdaptorUtil.loadManifestFrom(AdaptorUtil.java:191)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.getGeneratedManifest0(EclipseStorageHook.java:410)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.getGeneratedManifest(EclipseStorageHook.java:397)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.createCachedManifest(EclipseStorageHook.java:392)
-	at org.eclipse.core.runtime.internal.adaptor.CachedManifest.getManifest(CachedManifest.java:42)
-	at org.eclipse.core.runtime.internal.adaptor.CachedManifest.get(CachedManifest.java:142)
-	at org.eclipse.core.runtime.internal.adaptor.CachedManifest.get(CachedManifest.java:1)
-	at org.eclipse.osgi.framework.internal.core.ManifestLocalization.lookupResourceBundle(ManifestLocalization.java:104)
-	at org.eclipse.osgi.framework.internal.core.ManifestLocalization.getResourceBundle(ManifestLocalization.java:91)
-	at org.eclipse.osgi.framework.internal.core.ManifestLocalization.getHeaders(ManifestLocalization.java:52)
-	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getHeaders(AbstractBundle.java:964)
-	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getHeaders(AbstractBundle.java:911)
-	at org.eclipse.epp.usagedata.internal.gathering.monitors.BundleUsageMonitor.getBundleVersion(BundleUsageMonitor.java:96)
-	at org.eclipse.epp.usagedata.internal.gathering.monitors.BundleUsageMonitor.getBundleVersion(BundleUsageMonitor.java:92)
-	at org.eclipse.epp.usagedata.internal.gathering.monitors.BundleUsageMonitor$1.bundleChanged(BundleUsageMonitor.java:52)
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:847)
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
-	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
-Caused by: java.util.zip.ZipException: ZipFile closed
-	at java.util.zip.ZipFile.ensureOpenOrZipException(Unknown Source)
-	at java.util.zip.ZipFile.access$1100(Unknown Source)
-	at java.util.zip.ZipFile$ZipFileInputStream.read(Unknown Source)
-	at java.util.zip.ZipFile$1.fill(Unknown Source)
-	at java.util.zip.InflaterInputStream.read(Unknown Source)
-	at org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleEntry$ZipBundleEntryInputStream.read(ZipBundleEntry.java:157)
-	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
-	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
-	at sun.nio.cs.StreamDecoder.read(Unknown Source)
-	at java.io.InputStreamReader.read(Unknown Source)
-	at java.io.BufferedReader.fill(Unknown Source)
-	at java.io.BufferedReader.readLine(Unknown Source)
-	at java.io.BufferedReader.readLine(Unknown Source)
-	at org.eclipse.osgi.util.ManifestElement.parseBundleManifest(ManifestElement.java:516)
-	at org.eclipse.osgi.framework.util.Headers.parseManifest(Headers.java:257)
-	... 18 more
-Root exception:
-java.util.zip.ZipException: ZipFile closed
-	at java.util.zip.ZipFile.ensureOpenOrZipException(Unknown Source)
-	at java.util.zip.ZipFile.access$1100(Unknown Source)
-	at java.util.zip.ZipFile$ZipFileInputStream.read(Unknown Source)
-	at java.util.zip.ZipFile$1.fill(Unknown Source)
-	at java.util.zip.InflaterInputStream.read(Unknown Source)
-	at org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleEntry$ZipBundleEntryInputStream.read(ZipBundleEntry.java:157)
-	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
-	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
-	at sun.nio.cs.StreamDecoder.read(Unknown Source)
-	at java.io.InputStreamReader.read(Unknown Source)
-	at java.io.BufferedReader.fill(Unknown Source)
-	at java.io.BufferedReader.readLine(Unknown Source)
-	at java.io.BufferedReader.readLine(Unknown Source)
-	at org.eclipse.osgi.util.ManifestElement.parseBundleManifest(ManifestElement.java:516)
-	at org.eclipse.osgi.framework.util.Headers.parseManifest(Headers.java:257)
-	at org.eclipse.osgi.internal.baseadaptor.AdaptorUtil.loadManifestFrom(AdaptorUtil.java:191)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.getGeneratedManifest0(EclipseStorageHook.java:410)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.getGeneratedManifest(EclipseStorageHook.java:397)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.createCachedManifest(EclipseStorageHook.java:392)
-	at org.eclipse.core.runtime.internal.adaptor.CachedManifest.getManifest(CachedManifest.java:42)
-	at org.eclipse.core.runtime.internal.adaptor.CachedManifest.get(CachedManifest.java:142)
-	at org.eclipse.core.runtime.internal.adaptor.CachedManifest.get(CachedManifest.java:1)
-	at org.eclipse.osgi.framework.internal.core.ManifestLocalization.lookupResourceBundle(ManifestLocalization.java:104)
-	at org.eclipse.osgi.framework.internal.core.ManifestLocalization.getResourceBundle(ManifestLocalization.java:91)
-	at org.eclipse.osgi.framework.internal.core.ManifestLocalization.getHeaders(ManifestLocalization.java:52)
-	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getHeaders(AbstractBundle.java:964)
-	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getHeaders(AbstractBundle.java:911)
-	at org.eclipse.epp.usagedata.internal.gathering.monitors.BundleUsageMonitor.getBundleVersion(BundleUsageMonitor.java:96)
-	at org.eclipse.epp.usagedata.internal.gathering.monitors.BundleUsageMonitor.getBundleVersion(BundleUsageMonitor.java:92)
-	at org.eclipse.epp.usagedata.internal.gathering.monitors.BundleUsageMonitor$1.bundleChanged(BundleUsageMonitor.java:52)
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:847)
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
-	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-02 17:14:36.804
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x81020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-02 17:14:38.945
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x81020 /cygdrive/c/Users/kaush/Documents/Coding_Practice/FPGA/CO503-practicals/Practical2/ProjectFiles/FinalFinal/Software/custom_crc/custom_crc.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-02 17:16:06.977
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-02 17:16:07.711
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x81020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-02 17:16:09.844
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x81020 /cygdrive/c/Users/kaush/Documents/Coding_Practice/FPGA/CO503-practicals/Practical2/ProjectFiles/FinalFinal/Software/custom_crc/custom_crc.elf]
+!SESSION 2024-05-02 21:04:55.486 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-02 21:09:55.396
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x81020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-02 21:09:57.536
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x81020 /cygdrive/c/Users/kaush/Documents/Coding_Practice/FPGA/CO503-practicals/Practical2/ProjectFiles/FinalFinal/Software/custom_crc/custom_crc.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-02 21:14:04.647
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-02 21:14:05.373
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x81020]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-02 21:14:07.514
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x81020 /cygdrive/c/Users/kaush/Documents/Coding_Practice/FPGA/CO503-practicals/Practical2/ProjectFiles/FinalFinal/Software/custom_crc/custom_crc.elf]
