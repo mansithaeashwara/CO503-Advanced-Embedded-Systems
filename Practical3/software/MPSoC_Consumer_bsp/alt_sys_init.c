@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu1' in SOPC Builder design 'MPSoC'
  * SOPC Builder design path: C:/Users/kaush/Documents/Coding_Practice/FPGA/CO503-practicals/Practical3/MPSoC.sopcinfo
  *
- * Generated: Thu May 16 15:57:09 IST 2024
+ * Generated: Sat May 18 18:04:08 IST 2024
  */
 
 /*

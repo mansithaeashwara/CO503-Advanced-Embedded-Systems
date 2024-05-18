@@ -44,7 +44,7 @@
 
 module MPSoC_mm_interconnect_0_addr_router_002_default_decode
   #(
-     parameter DEFAULT_CHANNEL = 4,
+     parameter DEFAULT_CHANNEL = 0,
                DEFAULT_WR_CHANNEL = -1,
                DEFAULT_RD_CHANNEL = -1,
                DEFAULT_DESTID = 6 
@@ -202,37 +202,37 @@ module MPSoC_mm_interconnect_0_addr_router_002
 
     // ( 0x0 .. 0x40000 )
     if ( {address[RG:PAD0],{PAD0{1'b0}}} == 19'h0   ) begin
-            src_channel = 10'b010000;
+            src_channel = 10'b000001;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 6;
     end
 
     // ( 0x40000 .. 0x50000 )
     if ( {address[RG:PAD1],{PAD1{1'b0}}} == 19'h40000   ) begin
-            src_channel = 10'b000100;
+            src_channel = 10'b100000;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 5;
     end
 
     // ( 0x50800 .. 0x51000 )
     if ( {address[RG:PAD2],{PAD2{1'b0}}} == 19'h50800   ) begin
-            src_channel = 10'b000010;
+            src_channel = 10'b000100;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 1;
     end
 
     // ( 0x51020 .. 0x51040 )
     if ( {address[RG:PAD3],{PAD3{1'b0}}} == 19'h51020   ) begin
-            src_channel = 10'b001000;
+            src_channel = 10'b010000;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 9;
     end
 
     // ( 0x51040 .. 0x51048 )
     if ( {address[RG:PAD4],{PAD4{1'b0}}} == 19'h51040   ) begin
-            src_channel = 10'b100000;
+            src_channel = 10'b001000;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 3;
     end
 
     // ( 0x51048 .. 0x51050 )
     if ( {address[RG:PAD5],{PAD5{1'b0}}} == 19'h51048  && read_transaction  ) begin
-            src_channel = 10'b000001;
+            src_channel = 10'b000010;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 7;
     end
 

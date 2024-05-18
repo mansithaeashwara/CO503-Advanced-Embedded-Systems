@@ -54,42 +54,12 @@ void WRITE_FIFO_1(int *buffer)
 
 }
 
-
-//void READ_FIFO_1(int *buffer)
-//{
-//	// Wait if the fifo is empty
-//	while(IORD_32DIRECT(MEM_BASE,emptyp));
-//
-//	// Read the data
-//	*buffer = IORD_32DIRECT(MEM_BASE, readp);
-//
-//	// Update the read pointer
-//	// Wrap around the write pointer if it is at the last index
-//	// even if writep is at the end of the FIFO, the queue might not be full
-//	if (readp == STARTP + UNIT_SIZE * CAPACITY)
-//		readp = STARTP;
-//	else readp += UNIT_SIZE;
-//
-//
-//	// Update "count" in shared mem
-//	IOWR_32DIRECT(MEM_BASE, countp, IORD_32DIRECT(MEM_BASE,countp)-1);
-//
-//	// Update the "full?" and "empty?" flags accordingly
-//	IOWR_32DIRECT(MEM_BASE, fullp, 0x0000);
-//
-//	IOWR_32DIRECT(MEM_BASE, emptyp, (IORD_32DIRECT(MEM_BASE, countp) == 0));
-//	// Set the empty flag if FIFO is now empty
-//	// Reset the full flag if FIFO now has 1 enrty less than capacity
-//}
-//
-
-
 //Initialization
 void FIFO_1_INIT()
 {
 	writep = STARTP; // Initially the FIFO is empty, so start writing at the first slot
 	readp  = STARTP;
-	fullp   = MEM_BASE; // SET THIS OFFSET (If there are previous FIFOs in shared memory, use Prev Fifo's STARTP + Prev Fifo's size)
+	fullp   = 0; // SET THIS OFFSET (If there are previous FIFOs in shared memory, use Prev Fifo's STARTP + Prev Fifo's size)
 	emptyp   = fullp + UNIT_SIZE;
 	countp  = emptyp + UNIT_SIZE;
 

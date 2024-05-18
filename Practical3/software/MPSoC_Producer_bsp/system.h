@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu0' in SOPC Builder design 'MPSoC'
  * SOPC Builder design path: C:/Users/kaush/Documents/Coding_Practice/FPGA/CO503-practicals/Practical3/MPSoC.sopcinfo
  *
- * Generated: Thu May 16 15:54:12 IST 2024
+ * Generated: Sat May 18 18:25:38 IST 2024
  */
 
 /*
@@ -264,7 +264,7 @@
 #define SYS_ID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYS_ID_NAME "/dev/sys_id"
 #define SYS_ID_SPAN 8
-#define SYS_ID_TIMESTAMP 1715854611
+#define SYS_ID_TIMESTAMP 1716034729
 #define SYS_ID_TYPE "altera_avalon_sysid_qsys"
 
 

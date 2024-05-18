@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu1' in SOPC Builder design 'MPSoC'
  * SOPC Builder design path: C:/Users/kaush/Documents/Coding_Practice/FPGA/CO503-practicals/Practical3/MPSoC.sopcinfo
  *
- * Generated: Thu May 16 15:59:39 IST 2024
+ * Generated: Sat May 18 18:53:53 IST 2024
  */
 
 /*
@@ -50,6 +50,7 @@
 
 MEMORY
 {
+    onchip_data_cpu_0 : ORIGIN = 0x0, LENGTH = 65536
     onchip_data_cpu_1 : ORIGIN = 0x10000, LENGTH = 65536
     onchip_shared_between : ORIGIN = 0x20000, LENGTH = 131072
     reset : ORIGIN = 0x40000, LENGTH = 32

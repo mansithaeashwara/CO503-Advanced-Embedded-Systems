@@ -14,43 +14,6 @@
 
 #include "FIFO_1.h"
 
-
-//void WRITE_FIFO_1(int *buffer)
-//{
-//
-//	printf("Writing....\n");
-//
-//	printf("Count: %d\n", IORD_32DIRECT(MEM_BASE, countp));
-//	printf("Empty: %d\n", IORD_32DIRECT(MEM_BASE, emptyp));
-//	printf("Full: %d\n\n", IORD_32DIRECT(MEM_BASE, fullp));
-//	// Wait if the fifo is full
-//	while(IORD_32DIRECT(MEM_BASE,fullp));
-//
-//	// Write the data to FIFO
-//	IOWR_32DIRECT(MEM_BASE, writep, *buffer);
-//
-//	// Update the write pointer
-//	// Wrap around the write pointer if it is at the last index
-//	// even if writep is at the end of the FIFO, the queue might not be full
-//	if (writep == STARTP + UNIT_SIZE * CAPACITY)
-//		writep = STARTP;
-//	else writep += UNIT_SIZE;
-//
-//	// Update "count" in shared mem
-//	IOWR_32DIRECT(MEM_BASE, countp, IORD_32DIRECT(MEM_BASE,countp)+1);
-//
-//	// Update the "full?" and "empty?" flags accordingly
-//
-//	IOWR_32DIRECT(MEM_BASE, writep, 0x0001); // Not Empty since we are writing an entry
-//	IOWR_32DIRECT(MEM_BASE, fullp, (CAPACITY == IORD_32DIRECT(MEM_BASE, countp)));
-//	// Set the full flag if FIFO is now full
-//	// Reset the empty flag if FIFO now has 1 enrty
-//
-//
-//
-//}
-
-
 void READ_FIFO_1(int *buffer)
 {
 	// Wait if the fifo is empty
@@ -97,7 +60,7 @@ void FIFO_1_INIT()
 {
 	writep = STARTP; // Initially the FIFO is empty, so start writing at the first slot
 	readp  = STARTP;
-	fullp  = MEM_BASE; // SET THIS OFFSET (If there are previous FIFOs in shared memory, use Prev Fifo's STARTP + Prev Fifo's size)
+	fullp  = 0; // SET THIS OFFSET (If there are previous FIFOs in shared memory, use Prev Fifo's STARTP + Prev Fifo's size)
 	emptyp = fullp + UNIT_SIZE;
 	countp = emptyp + UNIT_SIZE;
 

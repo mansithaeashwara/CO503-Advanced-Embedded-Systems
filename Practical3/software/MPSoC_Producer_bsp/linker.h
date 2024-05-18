@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu0' in SOPC Builder design 'MPSoC'
  * SOPC Builder design path: C:/Users/kaush/Documents/Coding_Practice/FPGA/CO503-practicals/Practical3/MPSoC.sopcinfo
  *
- * Generated: Thu May 16 15:54:12 IST 2024
+ * Generated: Sat May 18 18:25:38 IST 2024
  */
 
 /*
@@ -67,6 +67,8 @@
 
 #define ONCHIP_DATA_CPU_0_REGION_BASE 0x0
 #define ONCHIP_DATA_CPU_0_REGION_SPAN 65536
+#define ONCHIP_DATA_CPU_1_REGION_BASE 0x10000
+#define ONCHIP_DATA_CPU_1_REGION_SPAN 65536
 #define ONCHIP_INSTR_MEM_0_REGION_BASE 0x40020
 #define ONCHIP_INSTR_MEM_0_REGION_SPAN 65504
 #define ONCHIP_SHARED_BETWEEN_REGION_BASE 0x20000

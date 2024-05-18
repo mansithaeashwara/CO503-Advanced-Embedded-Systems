@@ -2,7 +2,7 @@ set_global_assignment -entity "MPSoC" -library "MPSoC" -name IP_TOOL_NAME "Qsys"
 set_global_assignment -entity "MPSoC" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "MPSoC" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "MPSoC" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../MPSoC.sopcinfo"]
-set_global_assignment -entity "MPSoC" -library "MPSoC" -name SLD_INFO "QSYS_NAME MPSoC HAS_SOPCINFO 1 GENERATION_ID 1715854611"
+set_global_assignment -entity "MPSoC" -library "MPSoC" -name SLD_INFO "QSYS_NAME MPSoC HAS_SOPCINFO 1 GENERATION_ID 1716034729"
 set_global_assignment -library "MPSoC" -name MISC_FILE [file join $::quartus(qip_path) "../../MPSoC.cmp"]
 set_global_assignment -library "MPSoC" -name SLD_FILE [file join $::quartus(qip_path) "MPSoC.regmap"]
 set_global_assignment -library "MPSoC" -name SLD_FILE [file join $::quartus(qip_path) "MPSoC.debuginfo"]
@@ -16,20 +16,17 @@ set_global_assignment -library "MPSoC" -name SDC_FILE [file join $::quartus(qip_
 set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_irq_mapper.sv"]
 set_global_assignment -library "MPSoC" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0.v"]
 set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_arbitrator.sv"]
-set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_rsp_xbar_mux_002.sv"]
+set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_rsp_xbar_mux_001.sv"]
 set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_rsp_xbar_mux.sv"]
-set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_rsp_xbar_demux_008.sv"]
-set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_rsp_xbar_demux.sv"]
-set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_cmd_xbar_mux_008.sv"]
+set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_rsp_xbar_demux_003.sv"]
 set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_cmd_xbar_mux_003.sv"]
 set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_cmd_xbar_mux.sv"]
-set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_cmd_xbar_demux_002.sv"]
+set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_cmd_xbar_demux_001.sv"]
 set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_cmd_xbar_demux.sv"]
-set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_id_router_009.sv"]
-set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_id_router_008.sv"]
 set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_id_router_007.sv"]
-set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_id_router_004.sv"]
+set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_id_router_006.sv"]
 set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_id_router_003.sv"]
+set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_id_router_002.sv"]
 set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_id_router.sv"]
 set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_addr_router_003.sv"]
 set_global_assignment -library "MPSoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/MPSoC_mm_interconnect_0_addr_router_002.sv"]
@@ -80,48 +77,39 @@ set_global_assignment -entity "MPSoC_irq_mapper" -library "MPSoC" -name IP_TOOL_
 set_global_assignment -entity "MPSoC_mm_interconnect_0" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_interconnect_wrapper"
 set_global_assignment -entity "MPSoC_mm_interconnect_0" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "MPSoC_mm_interconnect_0" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_rsp_xbar_mux_002" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_multiplexer"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_rsp_xbar_mux_002" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_rsp_xbar_mux_002" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "MPSoC_mm_interconnect_0_rsp_xbar_mux_001" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "MPSoC_mm_interconnect_0_rsp_xbar_mux_001" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "MPSoC_mm_interconnect_0_rsp_xbar_mux_001" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_rsp_xbar_mux" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_multiplexer"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_rsp_xbar_mux" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_rsp_xbar_mux" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_rsp_xbar_demux_008" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_rsp_xbar_demux_008" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_rsp_xbar_demux_008" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_rsp_xbar_demux" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_rsp_xbar_demux" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_rsp_xbar_demux" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_cmd_xbar_mux_008" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_multiplexer"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_cmd_xbar_mux_008" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_cmd_xbar_mux_008" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "MPSoC_mm_interconnect_0_rsp_xbar_demux_003" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "MPSoC_mm_interconnect_0_rsp_xbar_demux_003" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "MPSoC_mm_interconnect_0_rsp_xbar_demux_003" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_cmd_xbar_mux_003" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_multiplexer"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_cmd_xbar_mux_003" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_cmd_xbar_mux_003" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_cmd_xbar_mux" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_multiplexer"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_cmd_xbar_mux" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_cmd_xbar_mux" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_cmd_xbar_demux_002" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_cmd_xbar_demux_002" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_cmd_xbar_demux_002" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "MPSoC_mm_interconnect_0_cmd_xbar_demux_001" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "MPSoC_mm_interconnect_0_cmd_xbar_demux_001" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "MPSoC_mm_interconnect_0_cmd_xbar_demux_001" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_cmd_xbar_demux" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_cmd_xbar_demux" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_cmd_xbar_demux" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_009" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_router"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_009" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_009" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_008" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_router"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_008" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_008" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_007" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_router"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_007" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_007" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_004" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_router"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_004" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
-set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_004" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_006" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_006" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_006" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_003" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_router"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_003" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_003" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_002" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_002" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router_002" -library "MPSoC" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router" -library "MPSoC" -name IP_TOOL_NAME "altera_merlin_router"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router" -library "MPSoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "MPSoC_mm_interconnect_0_id_router" -library "MPSoC" -name IP_TOOL_ENV "Qsys"

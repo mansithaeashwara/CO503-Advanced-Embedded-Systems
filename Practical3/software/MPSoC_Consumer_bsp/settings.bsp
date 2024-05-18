@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>May 16, 2024 3:59:39 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1715855379293</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>May 18, 2024 6:54:04 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1716038644428</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\kaush\Documents\Coding_Practice\FPGA\CO503-practicals\Practical3\software\MPSoC_Consumer_bsp</BspGeneratedLocation>
         <BspSettingsFile>C:\Users\kaush\Documents\Coding_Practice\FPGA\CO503-practicals\Practical3\software\MPSoC_Consumer_bsp\settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\kaush\Documents\Coding_Practice\FPGA\CO503-practicals\Practical3\MPSoC.sopcinfo</SopcDesignFile>
@@ -26,7 +26,7 @@
                 <SettingName>hal.timestamp_timer</SettingName>
                 <Identifier>ALT_TIMESTAMP_CLK</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>timer_1</Value>
+                <Value>none</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>system_h_define</DestinationFile>
                 <Description>Slave descriptor of timestamp timer device. This device is used by Altera HAL timestamp drivers for high-resolution time measurement. This setting defines the value of ALT_TIMESTAMP_CLK in system.h.</Description>
@@ -862,6 +862,14 @@
                 <Enabled>false</Enabled>
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
+        <LinkerRegion>
+                <regionName>onchip_data_cpu_0</regionName>
+                <memoryName>onchip_shared_memory</memoryName>
+                <offset>0</offset>
+                <size>65536</size>
+                <baseAddress>0x0</baseAddress>
+                <addressRange>0x00000000 - 0x0000FFFF</addressRange>
+        </LinkerRegion>
         <LinkerRegion>
                 <regionName>onchip_data_cpu_1</regionName>
                 <memoryName>onchip_shared_memory</memoryName>

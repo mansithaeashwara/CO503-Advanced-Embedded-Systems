@@ -3,7 +3,7 @@
 # Machine generated for CPU 'cpu0' in SOPC Builder design 'MPSoC'
 # SOPC Builder design path: C:/Users/kaush/Documents/Coding_Practice/FPGA/CO503-practicals/Practical3/MPSoC.sopcinfo
 #
-# Generated: Thu May 16 15:52:29 IST 2024
+# Generated: Sat May 18 18:02:50 IST 2024
 
 # DO NOT MODIFY THIS FILE
 #

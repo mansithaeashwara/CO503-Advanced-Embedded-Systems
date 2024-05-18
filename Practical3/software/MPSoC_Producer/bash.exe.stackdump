@@ -1,0 +1,12 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=610DB869
+eax=00000000 ebx=00000000 ecx=00000000 edx=02E9AB84 esi=00000000 edi=00000330
+ebp=02E9AB50 esp=02E9AA38 program=C:\altera\13.1\quartus\bin\cygwin\bin\bash.exe, pid 25800, thread unknown (0x4D68)
+cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
+Stack trace:
+Frame     Function  Args
+02E9AB50  610DB869  (00000000, 00000000, 00000000, 00000000)
+02E9AC20  610DC667  (FFFFFFFF, FFFFFFFF, 00000000, 00000000)
+02E9AC80  6102EF2E  (00000002, 3D3D3906, 02E9CD98, 76E5F280)
+02E9AD18  76E5F36A  (00000002, 02E9CD98, 76E5F280, 00000000)
+ 630746 [unknown (0x4D68)] bash 25800! exception::handle: Exception: STATUS_ACCESS_VIOLATION
+ 631662 [unknown (0x4D68)] bash 25800! exception::handle: Error while dumping state (probably corrupted stack)

@@ -2,10 +2,10 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>May 16, 2024 3:54:12 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1715855052002</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>May 18, 2024 6:43:57 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1716038037676</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\kaush\Documents\Coding_Practice\FPGA\CO503-practicals\Practical3\software\MPSoC_Producer_bsp</BspGeneratedLocation>
-        <BspSettingsFile>settings.bsp</BspSettingsFile>
+        <BspSettingsFile>C:\Users\kaush\Documents\Coding_Practice\FPGA\CO503-practicals\Practical3\software\MPSoC_Producer_bsp\settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\kaush\Documents\Coding_Practice\FPGA\CO503-practicals\Practical3\MPSoC.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>cpu0</Cpu>
@@ -869,6 +869,14 @@
                 <size>65536</size>
                 <baseAddress>0x0</baseAddress>
                 <addressRange>0x00000000 - 0x0000FFFF</addressRange>
+        </LinkerRegion>
+        <LinkerRegion>
+                <regionName>onchip_data_cpu_1</regionName>
+                <memoryName>onchip_shared_memory</memoryName>
+                <offset>65536</offset>
+                <size>65536</size>
+                <baseAddress>0x10000</baseAddress>
+                <addressRange>0x00010000 - 0x0001FFFF</addressRange>
         </LinkerRegion>
         <LinkerRegion>
                 <regionName>onchip_shared_between</regionName>

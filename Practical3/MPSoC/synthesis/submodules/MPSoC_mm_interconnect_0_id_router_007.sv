@@ -187,11 +187,7 @@ module MPSoC_mm_interconnect_0_id_router_007
 
 
         if (destid == 2 ) begin
-            src_channel = 10'b01;
-        end
-
-        if (destid == 0 ) begin
-            src_channel = 10'b10;
+            src_channel = 10'b1;
         end
 
 
